@@ -403,7 +403,9 @@ var app = (function () {
       "sewerperson - low res pictures of figures in the snow (eric godlow)",
       "sewerperson - blind/deaf/mute  (splashgvng)",
       "sewerperson - THE NITEMAN [dayman solos canonically] (brody)"
-    ]), 
+    ].map(value => ({ value, sort: Math.random() }))
+.sort((a, b) => a.sort - b.sort)
+.map(({ value }) => value)), 
        
     On = {
       subscribe: ue([
