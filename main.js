@@ -2009,7 +2009,7 @@ var app = (function () {
           "url": "https://api.soundcloud.com/tracks/1449586591",
           "answer": "sewerperson - THE NITEMAN [dayman solos canonically] (brody)"
         }
-      ],
+      ].map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({value}) => value),
       Pn
       ).subscribe,
     };
